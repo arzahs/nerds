@@ -16,14 +16,14 @@ body{
   display: table;
   clear: both;
 }
+/*Разметка хедера*/
 header{
-	
-	background-color: #eee;
+background-color: #eee;
 }
 .header-logo{
 	float:left;
 	width:140px;
-	margin-left: 10px;
+	margin-top: 28px;
 	margin-right: 10px;
 }
 .header-menu{
@@ -36,18 +36,44 @@ header{
   padding: 0;
   font-size: 0;
   list-style: none;
+  text-align: right;
 }
 .header-menu li{
 	display: inline-block;
 	font-size: 14px;
 	font-height:30px;
- vertical-align: top;
+	font-weight: medium;
+    vertical-align: top;
 }
-
+.header-menu a{
+ font-style:medium;
+  font-weight:bold;
+  font-size: 14px;
+display: block;
+text-decoration: none;
+color: #000000;
+padding-top: 60px;
+padding-left: 40px;
+}
 .basket{
 	float:right;
 	max-width: 100px;
+	padding-top: 60px;
+	
+
 }
+.basket a{
+	text-decoration: none;
+	 font-style:medium;
+  font-weight:bold;
+  color: #000000;
+  font-size: 14px;
+}
+/*конец разметки хедера*/
+/*Место для слайдера*/
+
+
+/*разметка фич*/
 .features-row{
 
 }
@@ -61,6 +87,8 @@ header{
 .features-item:last-child{
 	margin-right: 0;
 }
+/*конец разметки фич*/
+/*разметка текста*/
 .inner-content-column-left{
 	float: left;
 	width: 640px;
@@ -69,6 +97,8 @@ header{
 	float: left;
 	width: 240px
 }
+/*конец разметки текста*/
+/*логотипы*/
 .logo-row{
 	padding-top:60px;
     padding-bottom:30px;
@@ -86,6 +116,7 @@ header{
 	margin-right: 0;
 	 margin-top:-20px;
 }
+/*футер*/
 footer{
 
 }
