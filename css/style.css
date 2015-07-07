@@ -217,6 +217,12 @@ margin-bottom: 80px;
 }
 /*конец разметки фич*/
 /*разметка текста*/
+.content-column {
+	margin-top: 60px;
+	border-top: 2px solid #eeeeee;
+	margin-bottom: 20px;
+	padding-top: 60px;
+}
 .inner-content-column-left{
 	float: left;
 	width: 640px;
@@ -224,6 +230,77 @@ margin-bottom: 80px;
 .inner-content-column-right{
 	float: left;
 	width: 240px
+}
+.content-column h2{
+	line-height: 1.375;
+	font-weight: 500;
+	font-style:medium;
+	font-size: 36px;
+
+}
+.content-column h3{
+	line-height: 1.375;
+	font-size: 16px;
+ 	font-weight: 400;
+	font-style:medium;
+	text-transform: uppercase;
+}
+.content-column p{
+	margin-bottom: 40px;
+}
+.content-column ul{
+	 padding-left:20px;
+ 	font-weight:300;
+ 	font-size:16px;
+ 	color:#283136;
+ 	list-style:none;
+ 	padding:0;
+}
+.content-column ul li{
+	padding-bottom: 24px;
+	padding-left: 35px;
+	position: relative;
+}
+.content-column ul li:before{
+	content: "";
+	/*position: absolute;
+	left: -10px;
+	width: 25px;
+	height: 10px;
+	color: white;*/
+	position:absolute;
+    bottom:33px;
+    left:0px;
+    width:25px;
+    height:2px;
+	border-bottom: 2px solid red;
+
+}
+.content-logo{
+	padding-top: 20px;
+	margin-bottom: 60px;
+	text-align: center;
+}
+.content-logo p{
+	display: inline-block;
+	vertical-align: top;
+	/*margin: 0 auto;*/
+	padding: 0 10px;
+	position: relative;
+	z-index: 2;
+	background: white;
+	font-style: medium;
+	font-weight: 500;
+}
+.content-logo:after{
+	content: "";
+	position: relative;
+	top: -52px;
+
+	display: block;
+	border-bottom: 2px solid #eeeeee;
+    z-index: 1;
+
 }
 /*конец разметки текста*/
 /*логотипы*/
