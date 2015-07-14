@@ -578,7 +578,7 @@ background-color: #fb565a;
  	/*padding:0;*/
 }
 .modal-form-write{
-	/*display: none;*/
+	display: none;
 	position: absolute;
 	top: 0;
 	left: 50%;
@@ -591,7 +591,11 @@ background-color: #fb565a;
 	font-weight: 500;
 	font-style:medium;
 	color: black;
+	z-index:1000;
 
+}
+.modal-form-write-show{
+	display: block;
 }
 /*.modal-form-write p{
 	display: inline-block;
