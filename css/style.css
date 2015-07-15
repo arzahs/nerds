@@ -814,7 +814,168 @@ background-color: #fb565a;
 .price-controls{
 	white-space: nowrap;
 }
+input[type="radio"]{
+	display: none;
+	
+}
+.settings h4{
+	text-transform: uppercase;
+}
+.settings label{
+	margin-bottom: 15px;
+}
+input[type="radio"]+label{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 16px;
+	line-height: 20px;
+	cursor: pointer;
+
+}
+input[type="radio"]+label::before{
+	content: "\25cb";
+	font-family: "symbols-nerds";
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+	font-size: 28px;
+	color: #c1c1c1;
+}
+input[type="radio"]:checked+label::before{
+	content: '\25cf';
+	font-family: "symbols-nerds";
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+	font-size: 28px;
+	color: #c1c1c1;
+}
+input[type="checkbox"]{
+	display: none;
+}
+input[type="checkbox"]+label{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 16px;
+	line-height: 20px;
+	cursor: pointer;
+
+}
+input[type="checkbox"]+label::before{
+	content: '\2610';
+	font-family: "symbols-nerds";
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 10px;
+	font-size: 28px;
+	color: #c1c1c1;
+}
+input[type="checkbox"]:checked+label::before{
+	content: '\2611';
+	font-family: "symbols-nerds";
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 6px;
+	font-size: 28px;
+	color: #c1c1c1;
+}
 .portfolio{
 	float: right;
 	width: 560px;
+}
+.portfolio-setting{
+	width: 560px;
+	text-align: left;
+}
+.portfolio-setting a,
+.portfolio-setting .title
+{
+	display: inline-block;
+	vertical-align: top;
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 18px;
+
+}
+.portfolio-setting a{
+	font-family: "Roboto", sans-serif;
+	color:  #c1c1c1;
+	text-decoration: none;
+	border-bottom: 1px dotted #00ca74;
+	margin-right: 45px;
+}
+.portfolio-setting .title{
+	font-style: bold;
+	font-weight: 600;
+	margin-right: 40px;
+	 
+}
+.portfolio-setting .controls{
+	display: inline-block;
+	float:right;
+	position: relative;
+}
+.portfolio-setting .button-up{
+	display: inline-block;
+	position: relative;
+	bottom: 5px;
+	width: 0;
+	height: 0;
+	border-bottom: 11px solid #c1c1c1;
+	border-left: 6px solid white;
+	border-right: 6px solid white;
+	border-top: 0 solid white;
+	cursor: pointer;
+}
+.portfolio-setting .button-down{
+	display: inline-block;
+	position: relative;
+	top:-5px;
+	width: 0;
+	height: 0;
+	border-bottom: 0 solid white;
+	border-left: 6px solid white;
+	border-right: 6px solid white;
+	border-top: 11px solid #c1c1c1;
+	cursor: pointer;
+}
+.portfolio-setting .controls .active{
+	border-bottom-color: #00ca74; 
+}
+.portfolio-nav{
+	float: left;
+
+}
+.portfolio-nav nav{
+	font-size: 0;
+	margin: 0;
+  	padding: 0;
+  	list-style: none;
+  	text-align: center;
+}
+.portfolio-nav li{
+	display: inline-block;
+	font-size: 14px;
+	font-weight: medium;
+    vertical-align: bottom;
+}
+
+.portfolio-nav a{
+	display: block;
+	text-decoration: none;
+	font-family: "Roboto", sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: bold;
+	color: black;
+	/*width: 11px;
+	height: 11px;*/
+	padding: 14px 17px;
+	background: #f1f1f1;
+	border: 2px solid #f1f1f1;
+	text-align: center;
+	border-radius: 3px;
+}
+.portfolio-nav .active a{
+	background: white;
 }

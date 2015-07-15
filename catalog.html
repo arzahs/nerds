@@ -43,6 +43,7 @@
 	</header>
 	<div class="container clearfix">
 		<section class="settings">
+			<form action="/echo">
 			<h4>Стоимость:</h4>
 			<div class="range-filter">
 				<div class="range-controls">
@@ -55,15 +56,65 @@
 
 				<div class="price-controls">
 						от <input name="min-price" type="text" value="0" class="min-price">
-						до <input name="max-price" type="text" class="max-price" value="15000">
+						до <input name="max-priced" type="text" class="max-price" value="15000">
 				</div>
-					
-				
+				<h4>Сетка: </h4>
+				<input type="radio" name="type" id="adaptive">
+				<label for="adaptive">Адаптивная</label>
+				<input type="radio" name="type" id="fixin">
+				<label for="fixin">Фиксированная</label>
+				<input type="radio" name="type" id="rez">
+				<label for="rez">Резиновая</label>
+				<h4>Особенности: </h4>
+				<input type="checkbox" name="slider" id="slide">
+				<label for="slide">Слайдер</label>
+				<input type="checkbox" name="function" id="block">
+				<label for="block" >Блок преимуществ</label>
+				<input type="checkbox" name="function" id="news">
+				<label for="news">Новости</label><br>
+				<input type="checkbox" name="function" id="galery">
+				<label for="galery">Галерея</label><br>
+				<input type="checkbox" name="function" id="basket">
+				<label for="basket">Корзина</label>
 			</div>
+			</form>
 		</section>
 		<section class="portfolio">
-		
+				<div class="portfolio-setting">
+					<div class="title">Сортировать:</div>
+					<a href="#">По цене</a>
+					<a href="#">По типу</a>
+					<a href="#">По функционалу</a>
+					<div class="controls">
+						<div class="button-up active"></div>
+						<div class="button-down"></div>
+					</div>
+				</div>
+				<div class="portfolio-items">
+					<div class="row">
+						<div class="portfolio-item">
+							
+						</div>
+					</div>
+				</div>
+		<nav class="portfolio-nav">
+			<ul>
+				<li class="active">
+					<a href="#">1</a>
+				</li>
+				<li>
+					<a href="#">2</a>
+				</li>
+				<li>
+					<a href="#">3</a>
+				</li>
+				<li>
+					<a href="#">Следующая</a>
+				</li>
+			</ul>
+		</nav>
 		</section>
+		
 	</div>
 	<footer class="clearfix">
 			<div class="map">
@@ -107,6 +158,6 @@
 		</form>
 	</div>
 	<script src="js/script.js"></script>
-	<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=wnzOzpam6ek8BFYLkLTuJPOkYwq1nQaJ&height=416&id=yandex-map"></script>
+	<!---<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=wnzOzpam6ek8BFYLkLTuJPOkYwq1nQaJ&height=416&id=yandex-map"></script>-->
 </body>
 </html>
