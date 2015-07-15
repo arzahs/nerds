@@ -250,6 +250,22 @@ padding-left: 40px;
 	height: 2px;
 	background: #fb565a;
 }
+.big-title{
+	min-height: 240px;
+	text-align: center;
+}
+.big-title h2{
+	/*padding-top: 30px;*/
+	margin-top: 60px;
+	margin-bottom: 80px;
+	font-style:medium;
+    font-weight:100;
+    line-height: 1.375;
+  	font-size: 40px;
+  	font-family: "Roboto", sans-serif;
+  	text-transform: uppercase;
+}
+
 /*конец разметки хедера*/
 /*Место для слайдера*/
 .slider{
