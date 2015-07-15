@@ -296,7 +296,7 @@ padding-left: 40px;
  /*background-color: rgba(255,255,0,0.1);*/
  }
  .slide-text{
-	width: 380px;
+	width: 480px;
 	padding: 30px 0;
 	color: #283136;
  }
@@ -328,7 +328,7 @@ padding-left: 40px;
 .slide{
     display:none;
 }
-.slide:nth-child(1){
+.slide-show{
 	display: block;
 }
 /*разметка фич*/
