@@ -481,18 +481,21 @@ footer{
 	width: 100%;
 	height: 416px;
 	background: url(../img/map.jpg) 50% 50% no-repeat;
-
+	position: relative;
 } 
+#yandex-map{
+	position: relative;
+	z-index: 0;
+}
 .map-contact{	
 	background: white;
 	width:200px;
 	height: 195px; 
-
 	padding: 25px 20px;
-	position: relative;
+	position: absolute;
 	top:85px;
 	text-align: center;
-	z-index: 1;
+	z-index: 100;
 
 }
 .map-contact h3{
