@@ -904,6 +904,16 @@ input[type="checkbox"]:checked+label::before{
 	border-bottom: 1px dotted #00ca74;
 	margin-right: 45px;
 }
+.portfolio-setting a:hover{
+	color:black;
+}
+.portfolio-setting a:active,
+.portfolio-setting a[class="active"]
+{
+	color: black;
+	border: none;
+}
+
 .portfolio-setting .title{
 	font-style: bold;
 	font-weight: 600;
@@ -940,8 +950,16 @@ input[type="checkbox"]:checked+label::before{
 	cursor: pointer;
 }
 .portfolio-setting .controls .active{
-	border-bottom-color: #00ca74; 
+	border-bottom-color: #00ca74;
+	border-top-color: #00ca74;  
 }
+.portfolio-setting .button-up:active{
+	border-bottom-color: black;
+}
+.portfolio-setting .button-down:active{
+	border-top-color: black;
+}
+
 .portfolio-nav{
 	float: left;
 
@@ -979,3 +997,4 @@ input[type="checkbox"]:checked+label::before{
 .portfolio-nav .active a{
 	background: white;
 }
+
