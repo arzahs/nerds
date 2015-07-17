@@ -882,10 +882,13 @@ input[type="checkbox"]:checked+label::before{
 .portfolio{
 	float: right;
 	width: 560px;
+	padding: 0;
 }
 .portfolio-setting{
 	width: 560px;
 	text-align: left;
+	margin-bottom: 22px;
+	margin-top: 22px;
 }
 .portfolio-setting a,
 .portfolio-setting .title
@@ -1007,12 +1010,23 @@ input[type="checkbox"]:checked+label::before{
 .portfolio-nav .active a{
 	background: white;
 }
+.portfolio-items{
+	
+}
 .portfolio-item{
 	display: inline-block;
 	vertical-align: top;
-	position: relative;
+	width: 240px;
+	margin: 0;
+	margin-left: 75px;
+	margin-bottom: 80px;
 }
-
+.row{
+	margin-left: -75px;
+}
+/*.portfolio-item:nth-child(2n){
+	margin-right: 0px;
+}*/
 .portfolio-item-nav{
 	width: 240px;
 	height: 30px;
@@ -1025,7 +1039,7 @@ input[type="checkbox"]:checked+label::before{
 .portfolio-item-nav .circle{
 	display: inline-block;
 	vertical-align: top;
-	/*position: absolute;*/
+	position: relative;
 	width: 10px;
 	height: 10px;
 	background: white;
@@ -1048,8 +1062,10 @@ position: relative;
 	background: white;
 	text-align: center;
 	top: 20px;
-	left: 50%;
-	margin-left: -100px;
+	left:20px;
+	/*left: 50%;
+	margin-left: -100px;*/
+	z-index: 10;
 }
 .portfolio-item-information h3{
 	font-size: 18px;
