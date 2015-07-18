@@ -1006,24 +1006,32 @@ input[type="radio"]:disabled+label{
 	color: black;
 	/*width: 11px;
 	height: 11px;*/
-	padding: 14px 17px;
+	padding: 11px 15px;
 	background: #f1f1f1;
-	border: 2px solid #f1f1f1;
+	/*border: 2px solid #f1f1f1;*/
+	/*box-shadow: 2px #f1f1f1 inset;*/
 	text-align: center;
 	border-radius: 3px;
+	box-shadow: 2px red inset;
 }
+.portfolio-nav li:last-child a{
+	padding: 11px 30px;
+}
+
 .portfolio-nav a:hover{
 	background: #e5e5e5;
-	border-color: #e5e5e5;
+	
 }
 .portfolio-nav li:not(.active) a:active{
 	background: #d5d5d5;
-	border-color: #d5d5d5;
+	/*border-color: #d5d5d5;
 	padding-top: 14px;
-	border-top: 3px solid #b5b5b5;
+	border-top: 3px solid #b5b5b5;*/
+	box-shadow: 0  2px #b5b5b5 inset;
 }
 .portfolio-nav .active a{
 	background: white;
+	box-shadow: 0 0 0 3px #f1f1f1 inset;
 }
 .portfolio-items{
 	font-size: 0;
