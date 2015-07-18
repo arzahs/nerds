@@ -97,6 +97,7 @@ body{
 	font-family: "Roboto", sans-serif;
 	text-transform: uppercase;
 	text-align: center;
+	line-height: 18px;
 	text-decoration: none;
 	border-radius: 3px;
 	font-size: 12px;
@@ -105,6 +106,10 @@ body{
   	cursor: pointer;
 
 
+}
+.btn:disabled{
+	cursor: default;
+	opacity: .5;
 }
 
 .red{
@@ -747,7 +752,7 @@ background-color: #fb565a;
 	width:220px;
 }
 .modal-form-write a{
-	padding: 5px 0px;
+	padding: 10px 0px;
 	width: 220px;
 	float: right;
 }
@@ -829,6 +834,9 @@ input[type="radio"]+label{
 	vertical-align: middle;
 	font-size: 16px;
 	line-height: 20px;
+	font-weight: 400;
+	
+	color: #283136;
 	cursor: pointer;
 
 }
@@ -858,6 +866,8 @@ input[type="checkbox"]+label{
 	vertical-align: middle;
 	font-size: 16px;
 	line-height: 20px;
+	font-weight: 400;
+	color: #283136;
 	cursor: pointer;
 
 }
@@ -878,6 +888,11 @@ input[type="checkbox"]:checked+label::before{
 	margin-right: 6px;
 	font-size: 28px;
 	color: #c1c1c1;
+}
+input[type="checkbox"]:disabled+label,
+input[type="radio"]:disabled+label{
+	cursor: default;
+	opacity: .5;
 }
 .portfolio{
 	float: right;
@@ -1011,18 +1026,19 @@ input[type="checkbox"]:checked+label::before{
 	background: white;
 }
 .portfolio-items{
-	
+	font-size: 0;
 }
 .portfolio-item{
 	display: inline-block;
 	vertical-align: top;
 	width: 240px;
+	font-size: 16px;
 	margin: 0;
-	margin-left: 75px;
+	margin-left: 80px;
 	margin-bottom: 80px;
 }
 .row{
-	margin-left: -75px;
+	margin-left: -80px;
 }
 /*.portfolio-item:nth-child(2n){
 	margin-right: 0px;
@@ -1076,10 +1092,13 @@ position: relative;
 	margin: 0;
 	padding: 0;
 	margin-bottom: 30px;
+	font-size: 14px;
+	line-height: 18px;
 }
 .portfolio-item-information .btn{
 	padding: 6px 30px;
 	margin: 0;
+	text-transform: uppercase;
 
 }
 .portfolio-item:hover .portfolio-item-information{
